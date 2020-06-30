@@ -4,7 +4,7 @@ import json
 pdf_document = 'general_science.pdf'
 text_file = open('content.txt', 'w', encoding='utf-8')
 doc = fitz.open(pdf_document)
-for i in range(15,140):
+for i in range(10,140):
         page1 = doc.loadPage(i)
         page1text = page1.getText('text')
         text_file.write(page1text)
